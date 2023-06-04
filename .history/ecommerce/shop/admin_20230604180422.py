@@ -6,5 +6,5 @@ from .models import *
     list_display = ('name','image','description')
     admin.site.register(Category, CategoryAdmin)"""
 
-admin.site.register(Category)
+admin.site.register(Category, CategoryAdmin)
 admin.site.register(Products)
