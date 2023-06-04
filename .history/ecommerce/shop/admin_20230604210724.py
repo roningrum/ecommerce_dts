@@ -5,8 +5,6 @@ from .models import *
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('name','image','description')
 
-class ProductAdmin(admin.ModelAdmin):
-    list_display = ('name','product_image','price','description')
 
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(Products, ProductAdmin)
+admin.site.register(Products)
